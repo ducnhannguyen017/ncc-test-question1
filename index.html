@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Left Sidebar with Content</title>
+    <style>
+        body{
+            display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+        }
+      .sidebar {
+        width: 150px;
+        background-color: #191718;
+        height: 100vh;
+        position: fixed;
+        left: 0;
+        top: 0;
+      }
+      .sidebar ul {
+        list-style: none;
+        padding: 0px;
+        margin: 0px;
+      }
+      .sidebar ul li {
+        background: #191718;
+        background: #191718;
+        height: 44px;
+        border-radius: 0px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+      }
+      .sidebar ul li:not(:last-child) {
+        border-bottom: solid 1px #5c5c5c;
+      }
+      .sidebar ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      .content {
+        margin-left: 150px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        /* padding: 20px; */
+      }
+      .content img {
+        width: 310px;
+      }
+
+      .content .upper-content {
+        background: #efefef;
+        max-width: 1510px;
+        padding: 38px;
+      }
+      .content .upper-content p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #000000;
+      }
+      .content .upper-content .header-upper-content {
+        font-weight: 700;
+        text-align: center;
+      }
+      .content .above-content {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+        column-gap: 50px;
+      }
+      .content .above-content span {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        display: block;
+        color: #000000;
+      }
+      .content .above-content img {
+        width: 128px;
+    height: 128px;
+      }
+      .content .above-content .above-item .main-item-content span,
+      .main-item-sub-content {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+      }
+      .content .above-content .above-item .main-item-content {
+       display: flex;
+      }
+      .footer{
+        margin-left: 150px;
+      }
+      .footer p{
+        font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+/* identical to box height */
+
+
+color: #3E3E3E;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="sidebar">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Service</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+      <img src="./logoNCC 1.png" alt="" />
+      <p>This is the main content of the page.</p>
+      <div class="upper-content">
+        <p class="header-upper-content">Lorem ipsum dolor sit asmet?</p>
+        <p class="body-upper-content">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tristique
+          consequat placerat. Vestibulum auctor pellentesque sem, eu posuere
+          erat hendrerit quis. Maecenas vel consequat turpis. Nam facilisis,
+          ligula in mattis sodales, augue justo tristique nulla, sed lacinia
+          ante eros ut mi. Morbi vitae diam augue. Aliquam vel mauris a nibh
+          auctor commodo. Praesent et nisi eu justo eleifend convallis. Quisque
+          suscipit maximus vestibulum. Phasellus congue mollis orci, sit amet
+          luctus augue tristique eu. Donec vulputate odio neque, sed semper
+          turpis pellentesque a.
+        </p>
+      </div>
+      <div class="above-content">
+        <div class="above-item">
+          <span class="item-header">Lorem ipsum dolor sit amet</span>
+          <div class="main-item-content">
+            <img src="./css-icon 1.png" alt="" />
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+              suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+              Nam porta massa in metus bibendum congue. Pellentesque ultrices
+              liquam egestas nunc at
+            </span>
+          </div>
+          <div class="main-item-sub-content">
+            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
+            ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+            porta massa in metus bibendum congue. Pellentesque ultrices
+            vestibulum mattis.
+          </div>
+        </div>
+        <div class="above-item">
+          <span class="item-header">Lorem ipsum dolor sit amet</span>
+          <div class="main-item-content">
+            <img src="./css-icon 1.png" alt="" />
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+              suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+              Nam porta massa in metus bibendum congue. Pellentesque ultrices
+              liquam egestas nunc at
+            </span>
+          </div>
+          <div class="main-item-sub-content">
+            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
+            ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+            porta massa in metus bibendum congue. Pellentesque ultrices
+            vestibulum mattis.
+          </div>
+        </div>
+        <div class="above-item">
+          <span class="item-header">Lorem ipsum dolor sit amet</span>
+          <div class="main-item-content">
+            <img src="./css-icon 1.png" alt="" />
+            <span
+              >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
+              dui sodales, faucibus libero ut, posuere felis. Donec imperdiet
+              suscipit accumsan. Aenean consequat condimentum velit ut tempor.
+              Nam porta massa in metus bibendum congue. Pellentesque ultrices
+              liquam egestas nunc at
+            </span>
+          </div>
+          <div class="main-item-sub-content">
+            ullamcorper ultricies. Donec feugiat velit nulla, vel sodales est
+            ullamcorper id. Aenean consequat condimentum velit ut tempor. Nam
+            porta massa in metus bibendum congue. Pellentesque ultrices
+            vestibulum mattis.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+        <p>Coppy right &copy; 2021</p>
+      </div>
+  </body>
+</html>
